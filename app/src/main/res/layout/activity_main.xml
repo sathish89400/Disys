@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form.ui.AddDataActivity">
+
+    <EditText
+        android:id="@+id/e_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/e_id"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/e_idbarahno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="idbarahno"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/e_name"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/e_idbarahno"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/e_unifiednumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Unifiednumber"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/e_email"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/e_mobileno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile No"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/e_unifiednumber"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/but_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@+id/e_mobileno"
+        app:layout_constraintLeft_toLeftOf="@+id/g_left"
+        app:layout_constraintRight_toRightOf="@+id/g_right"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+
+</android.support.constraint.ConstraintLayout>
